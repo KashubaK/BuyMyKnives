@@ -21,17 +21,15 @@ $covert-red: #cf4141
     overflow: hidden
 
     &:hover
-      .card-image
-        transition-delay: 0ms
+      .card-image, .card-details-bg
         background-size: auto 75%
 
       .card-details
-        transition-delay: 0ms
         transform: translateY(-100%)
 
         .card-details-bg
-          transition-delay: 0ms
           transform: translateY(-50%)
+          background-size: auto 75%
 
     .card-image
       width: 100%
@@ -43,7 +41,6 @@ $covert-red: #cf4141
       background-color: white
       will-change: background-size
       transition: background-size 500ms $ease
-      transition-delay: 500ms
 
     .card-details
       width: 100%
@@ -55,13 +52,12 @@ $covert-red: #cf4141
       border-top-left-radius: 10px
       border-top-right-radius: 10px
       transition: transform 750ms $ease
-      transform: translateY(0%)
+      transform: translateY(-100px)
       will-change: transform
       z-index: 1
       flex-shrink: 0
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.25)
       overflow: hidden
-      transition-delay: 500ms
 
       .card-details-bg
         position: absolute
@@ -69,16 +65,15 @@ $covert-red: #cf4141
         left: 0
         width: 100%
         height: 200%
-        background-size: cover
+        background-size: auto 100%
         background-position: center
         background-repeat: no-repeat
-        filter: blur(30px) saturate(180%)
+        filter: blur(30px) saturate(250%)
         opacity: 0.5
         z-index: 0
-        transition: transform 750ms $ease
-        transform: translateY(-100%)
-        will-change: transform
-        transition-delay: 500ms
+        transition: transform 750ms $ease, background-size 750ms $ease
+        transform: translateY(calc(-100% + 100px))
+        will-change: transform, background-size
 
       .card-details-inner
         position: absolute

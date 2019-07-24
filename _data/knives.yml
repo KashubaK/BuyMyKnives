@@ -8,6 +8,7 @@
   pattern: 774
   image: assets/images/navaja.png
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+  link: \#
 
 - name: 'Stiletto'
   skin: 'Doppler'
@@ -19,6 +20,7 @@
   pattern: 728
   image: assets/images/stiletto.png
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+  link: \#
 
 - name: 'Talon'
   skin: 'Rust Coat'
@@ -30,3 +32,4 @@
   pattern: 689
   image: assets/images/talon.png
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+  link: \#
