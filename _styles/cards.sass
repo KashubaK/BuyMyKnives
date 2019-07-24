@@ -1,6 +1,14 @@
 $border-color: #222
 $ease: cubic-bezier(0.165, 0.840, 0.440, 1.000)
 $covert-red: #cf4141
+
+body.preload
+  .card-image, .card-details-bg, .card-details
+    transition: none
+
+body:not(.preload)
+  .card-image, .card-details-bg, .card-details
+    transition: all 750ms $ease
   
 .card-container
   width: 100%
@@ -51,7 +59,6 @@ $covert-red: #cf4141
       z-index: 0
       background-color: white
       will-change: background-size
-      transition: background-size 500ms $ease
 
     .card-details
       width: 100%
@@ -63,7 +70,6 @@ $covert-red: #cf4141
       border-top-left-radius: 10px
       border-top-right-radius: 10px
       transform: translateY(-100px)
-      transition: transform 750ms $ease
       will-change: transform
       z-index: 1
       flex-shrink: 0
@@ -86,7 +92,6 @@ $covert-red: #cf4141
         filter: blur(30px) saturate(250%)
         opacity: 0.5
         z-index: 0
-        transition: transform 750ms $ease, background-size 750ms $ease
         transform: translateY(calc(-100% + 100px))
         will-change: transform, background-size
 
