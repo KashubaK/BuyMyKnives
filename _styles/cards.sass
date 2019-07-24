@@ -1,0 +1,192 @@
+$border-color: #222
+$ease: cubic-bezier(0.165, 0.840, 0.440, 1.000)
+$covert-red: #cf4141
+  
+.card-container
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+
+  .card
+    height: 858px
+    width: 480px
+    border-radius: 10px
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25)
+    margin: 0 50px
+    display: flex
+    flex-wrap: wrap
+    overflow: hidden
+
+    &:hover
+      .card-image
+        transition-delay: 0ms
+        background-size: auto 75%
+
+      .card-details
+        transition-delay: 0ms
+        transform: translateY(-100%)
+
+        .card-details-bg
+          transition-delay: 0ms
+          transform: translateY(-50%)
+
+    .card-image
+      width: 100%
+      height: 100%
+      background-size: auto 100%
+      background-position: center
+      background-repeat: no-repeat
+      z-index: 0
+      background-color: white
+      will-change: background-size
+      transition: background-size 500ms $ease
+      transition-delay: 500ms
+
+    .card-details
+      width: 100%
+      height: 50%
+      display: flex
+      flex-direction: column
+      position: relative
+      background: #fff
+      border-top-left-radius: 10px
+      border-top-right-radius: 10px
+      transition: transform 750ms $ease
+      transform: translateY(0%)
+      will-change: transform
+      z-index: 1
+      flex-shrink: 0
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.25)
+      overflow: hidden
+      transition-delay: 500ms
+
+      .card-details-bg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 200%
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        filter: blur(30px) saturate(180%)
+        opacity: 0.5
+        z-index: 0
+        transition: transform 750ms $ease
+        transform: translateY(-100%)
+        will-change: transform
+        transition-delay: 500ms
+
+      .card-details-inner
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 1
+        display: flex
+        flex-direction: column
+
+        .card-header
+          display: flex
+          padding: 15px
+          border-bottom: 1px solid $border-color
+
+          .card-name
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+
+            h1, h3
+              line-height: 1
+              color: #222
+              margin: 0
+              display: flex
+              align-items: center
+              height: 100%
+              font-size: 32px
+              line-height: 32px
+
+            h1
+              font-size: 32px
+              line-height: 32px
+
+            h3
+              margin-top: 10px
+              font-size: 28px
+              line-height: 28px
+              font-weight: 400
+
+          .card-price
+            margin-left: auto
+            display: flex
+            align-items: center
+
+            h1
+              margin: 0
+              color: #222
+
+        .card-body
+          padding: 10px
+
+          p
+            margin: 0
+            font-size: 20px
+
+        .card-action
+          padding: 20px 0
+          text-align: center
+          text-transform: uppercase
+          letter-spacing: 3px
+          font-weight: 700
+          border-top: 1px solid #222
+          text-decoration: none
+          background-color: #222
+          color: white
+          font-size: 16px
+          transition: background-color $ease 400ms, color $ease 400ms, letter-spacing $ease 400ms
+          will-change: background-color, letter-spacing, color
+
+          &:hover
+            background-color: $covert-red
+            letter-spacing: 4px
+
+        .card-data
+          display: flex
+          flex-direction: column
+          border-top: 1px solid #222222
+          margin-top: auto
+          background: rgba(white, 0.25)
+
+          .card-data-row
+            display: flex
+
+            &:last-child
+              .card-data-value, .card-data-label
+                border-bottom: 0
+            
+            .card-data-value
+              padding: 4px 8px
+              border-bottom: 1px solid #222222
+              width: calc(100% - 130px)
+
+            .card-data-label
+              color: #222
+              padding: 4px 8px
+              text-transform: uppercase
+              letter-spacing: 2px
+              width: 130px
+              text-align: right
+              border-right: 1px solid #222
+              border-bottom: 1px solid #222
+              font-weight: 600
+
+@keyframes showCardDetails
+  0%
+    height: 0%
+
+  100%
+    height: 60%

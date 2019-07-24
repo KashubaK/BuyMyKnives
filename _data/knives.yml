@@ -1,0 +1,32 @@
+- name: 'Navaja'
+  skin: 'Doppler'
+  stattrak: false
+  condition: Factory New
+  price: 600
+  wear_float: 0.0199
+  finish: 415
+  pattern: 774
+  image: assets/images/navaja.png
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+- name: 'Stiletto'
+  skin: 'Doppler'
+  stattrak: true
+  condition: Factory New
+  price: 550
+  wear_float: 0.0069
+  finish: 418
+  pattern: 728
+  image: assets/images/stiletto.png
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+- name: 'Talon'
+  skin: 'Rust Coat'
+  stattrak: true
+  condition: Battle Scarred
+  price: 250
+  wear_float: 0.8651
+  finish: 414
+  pattern: 689
+  image: assets/images/talon.png
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam

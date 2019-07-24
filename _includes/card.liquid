@@ -1,0 +1,56 @@
+<div class="card">
+  <div class="card-image" style="background-image: url({{ knife.image }});"></div>
+
+  <div class="card-details">
+    <div class="card-details-bg" style="background-image: url({{ knife.image }});"></div>
+
+    <div class="card-details-inner">
+      <div class="card-header">
+        <div class="card-name">
+          <h1>
+            {% if knife.stattrak %}
+              ★ StatTrak™
+            {% else %}
+              ★ 
+            {% endif %} 
+            {{ knife.name }}
+          </h1>
+          <h3>{{ knife.skin }}</h3>
+        </div>
+
+        <div class="card-price">
+          <h1>${{ knife.price }}</h1>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <p>
+          {{ knife.description }}
+        </p>
+      </div>
+
+      <div class="card-data">
+        <div class="card-data-row">
+          <span class="card-data-label">Condition</span>
+          <span class="card-data-value">{{ knife.condition }}</span>
+        </div>
+        <div class="card-data-row">
+          <span class="card-data-label">Float</span>
+          <span class="card-data-value">{{ knife.wear_float }}</span>
+        </div>
+        <div class="card-data-row">
+          <span class="card-data-label">Finish</span>
+          <span class="card-data-value">{{ knife.finish }}</span>
+        </div>
+        <div class="card-data-row">
+          <span class="card-data-label">Pattern</span>
+          <span class="card-data-value">{{ knife.pattern }}</span>
+        </div>
+      </div>
+
+      <a class="card-action" href="{{ knife.link }}">
+        Buy on Bitskins
+      </a>
+    </div>
+  </div>
+</div>

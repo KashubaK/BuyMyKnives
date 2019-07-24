@@ -1,0 +1,11 @@
+---
+layout: index
+---
+<!--  -->
+
+
+<div class="card-container">
+  {% for knife in site.data.knives %}
+    {% include card.liquid knife=knife %}
+  {% endfor %}
+</div>
