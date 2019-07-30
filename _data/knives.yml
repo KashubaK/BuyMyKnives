@@ -2,7 +2,7 @@
   skin: 'Doppler'
   stattrak: false
   condition: Factory New
-  price: 600
+  price: 550
   wear_float: 0.0199
   finish: 415
   pattern: 774
@@ -14,7 +14,7 @@
   skin: 'Doppler'
   stattrak: true
   condition: Factory New
-  price: 550
+  price: 580
   wear_float: 0.0069
   finish: 418
   pattern: 728
@@ -26,7 +26,7 @@
   skin: 'Rust Coat'
   stattrak: true
   condition: Battle Scarred
-  price: 250
+  price: 300
   wear_float: 0.8651
   finish: 414
   pattern: 689
