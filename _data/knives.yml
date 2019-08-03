@@ -2,7 +2,7 @@
   skin: Doppler
   stattrak: false
   condition: Factory New
-  price: 550
+  price: 500
   wear_float: 0.0199
   finish: 415
   pattern: 774
@@ -15,7 +15,7 @@
   skin: Doppler
   stattrak: true
   condition: Factory New
-  price: 550
+  price: 500
   wear_float: 0.0069
   finish: 418
   pattern: 728
