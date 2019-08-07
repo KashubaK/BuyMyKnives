@@ -1,16 +1,3 @@
-- name: Navaja
-  skin: Doppler
-  stattrak: false
-  condition: Factory New
-  price: 500
-  wear_float: 0.0199
-  finish: 415
-  pattern: 774
-  image: assets/images/navaja.png
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-  link: 'https://bitskins.com/view_item?item_id=16407563900&app_id=730'
 - name: Stiletto
   skin: Doppler
   stattrak: true
@@ -20,9 +7,6 @@
   finish: 418
   pattern: 728
   image: assets/images/stiletto.png
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
   link: 'https://bitskins.com/view_item?item_id=16407563887&app_id=730'
 - name: Talon
   skin: Rust Coat
@@ -33,7 +17,4 @@
   finish: 414
   pattern: 689
   image: assets/images/talon.png
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
   link: 'https://bitskins.com/view_item?item_id=16407563894&app_id=730'
